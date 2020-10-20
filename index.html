@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        UiL OTS Web Experiments
+    </title>
+
+    <!--
+
+      ,-.       _,---._ __  / \
+ /  )    .-'       `./ /   \
+(  (   ,'            `/    /|
+ \  `-"             \'\   / |
+  `.              ,  \ \ /  |
+   /`.          ,'-`----Y   |
+  (            ;        |   '
+  |  ,-.    ,-'         |  /
+  |  | (   |        hjw | /
+  )  |  \  `.___________|/
+  `--'   `--'
+
+Miauw!
+
+    -->
+
+    <link href="index_files/css/bootstrap.css" rel="stylesheet" />
+    <link href="index_files/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="index_files/css/fonts.css" rel="stylesheet" />
+    <link href="index_files/css/uu-style.css" rel="stylesheet" />
+    <script src="index_files/js/jquery-3.3.1.js"></script>
+    <script src="index_files/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" type="image/png" href="index_files/images/favicon.ico"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="container">
+    <div class="container-fluid uu-container hide-xs toppanel">
+        <div class="uu-inner-container ">
+            <div class="col-xl-3 col-md-3 col-12">
+                <div class="uu-logo">
+                    <a href="https://www.uu.nl">
+                        <img src="index_files/images/logo-header-en.svg" alt="Utrecht University" title="Utrecht University" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-9 titletext">
+                <a href="/">
+                    UiL OTS Web Experiments
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-fluid uu-container p-4">
+        <div class="uu-inner-container">
+
+            <!-- Main content -->
+            <div class="col-9">
+                <h1>Welcome</h1>
+                <p>
+                    On this website we host our web experiments. If you have received an invite for an experiment and
+                    landed on this page, please contact the person who gave you the invite. You probably received an
+                    invalid link.
+                </p>
+                <p>
+                    If you are just curious for (other) experiments, please check the 'open experiments' section below!
+                </p>
+
+                <h3>Open experiments</h3>
+                <p>While we mostly run our experiments on an invite-basis, we sometimes have experiments that anyone
+                    can participate in. The following experiments are open to everyone:</p>
+                <p>
+                    <i>There are currently no experiments open to everyone.</i>
+                </p>
+
+                <h3>
+                    Researchers
+                </h3>
+                <p>
+                    Are you a researcher affiliated to the UiL OTS and want to host your experiment here? Sent the lab
+                    team an email, and we'll help get you started!
+                </p>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-3">
+                <h4>UiL OTS</h4>
+                <p>
+                    The UiL OTS is the home of linguistic and communications research at Utrecht University.
+                </p>
+                <p>
+                    This website is maintained by the UiL OTS Labs for Pyscholinguistic research.
+                </p>
+                <h5>Contact</h5>
+                <table class="w-100">
+                    <tr>
+                        <td class="align-top">UiL OTS:</td>
+                        <td>
+                            <a href="https://www.uu.nl/en/research/utrecht-institute-of-linguistics-ots">
+                                Website
+                            </a><br/>
+                            GW_uil-ots@<span class="email">null</span>uu.nl
+                        </td>
+                    </tr>
+                    <tr><td class="p-1"></td></tr>
+                    <tr>
+                        <td class="align-top">UiL OTS Labs:</td>
+                        <td>
+                            <a href="https://uilots-labs.wp.hum.uu.nl/">
+                                Website
+                            </a><br/>
+                            labman.gw@<span class="email">null</span>uu.nl
+                        </td>
+                    </tr>
+                </table>
+                <script>
+                    // Protects emails from bots.
+                    // Bots don't have JS, so we add garbage to the email and hide it with JS
+                    $(function () {
+                        $('.email').hide();
+                    });
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid uu-container">
+        <div class="uu-inner-container">
+            <div class="col-10">
+                <img src="index_files/images/logo-footer-en.svg" alt="Utrecht University" title="Utrecht University" />
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
