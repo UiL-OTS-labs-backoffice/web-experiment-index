@@ -34,13 +34,6 @@ Miauw!
     <link rel="shortcut icon" type="image/png" href="https://web-experiments.lab.hum.uu.nl/index_files/images/favicon.ico"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        #error_message {
-            display: block;
-            background: #eee;
-            padding: 15px;
-        }
-    </style>
 </head>
 <body>
 <div id="container">
@@ -68,7 +61,6 @@ Miauw!
             <!-- Main content -->
             <div class="col-12 col-xl-9 col-md-9">
                 <h1>We encountered an error....</h1>
-                <code id="error_message"></code>
                 <p>
                    We encountered an error while setting up or running the experiment. Our apologies for the inconvenience.
                 </p>
@@ -117,20 +109,6 @@ Miauw!
                     // Bots don't have JS, so we add garbage to the email and hide it with JS
                     $(function () {
                         $('.email').hide();
-                    });
-
-
-                    $(function () {
-                        if (window.location.search) {
-                            let query = window.location.search.substring(1);
-                            let parts = query.split('&');
-                            parts.forEach((part) => {
-                                let s = part.split('=');
-                                if (s[0] === 'msg') {
-                                    $('#error_message').text(atob(s[1]));
-                                }
-                            });
-                        }
                     });
                 </script>
             </div>
