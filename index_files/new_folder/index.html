@@ -24,21 +24,19 @@ Miauw!
 
     -->
 
-    <link href="https://web-experiments.lab.hum.uu.nl/index_files/css/bootstrap.css" rel="stylesheet" />
-    <link href="https://web-experiments.lab.hum.uu.nl/index_files/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="https://web-experiments.lab.hum.uu.nl/index_files/css/uu-bootstrap.css" rel="stylesheet" />
     <link href="https://web-experiments.lab.hum.uu.nl/index_files/css/fonts.css" rel="stylesheet" />
-    <link href="https://web-experiments.lab.hum.uu.nl/index_files/css/uu-style.css" rel="stylesheet" />
-    <script src="https://web-experiments.lab.hum.uu.nl/index_files/js/jquery-3.3.1.js"></script>
-    <script src="https://web-experiments.lab.hum.uu.nl/index_files/js/bootstrap.min.js"></script>
+    <script src="https://web-experiments.lab.hum.uu.nl/index_files/js/bootstrap.js"></script>
+    <script src="https://web-experiments.lab.hum.uu.nl/index_files/js/jquery-3.3.1.min.js"></script>
 
     <link rel="shortcut icon" type="image/png" href="https://web-experiments.lab.hum.uu.nl/index_files/images/favicon.ico"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div id="container">
-    <div class="container-fluid uu-container toppanel">
-        <div class="uu-inner-container ">
+<div class="uu-root-container">
+    <div class="uu-header border-bottom">
+        <div class="uu-header-row">
             <div class="col-xl-3 col-md-3 col-12">
                 <div class="uu-logo">
                     <a href="https://www.uu.nl">
@@ -46,7 +44,7 @@ Miauw!
                     </a>
                 </div>
             </div>
-            <div class="col-9 titletext">
+            <div class="ms-auto uu-header-title">
                 <a href="/" class="hide-xs">
                     ILS Web Experiments
                 </a>
@@ -55,12 +53,13 @@ Miauw!
     </div>
 
     <!-- CONTENT -->
-    <div class="container-fluid uu-container p-4">
-        <div class="uu-inner-container">
-
+    <main class="uu-content">
+        <div class="uu-hero">
+            <h1>Welcome</h1>
+        </div>
+        <div class="uu-sidebar-container uu-sidebar-right">
             <!-- Main content -->
-            <div class="col-12 col-xl-9 col-md-9">
-                <h1>Welcome</h1>
+            <div class="uu-sidebar-content">
                 <h4>This experiment is under construction.</h4>
                 <p>
                     If you have received this link as part of your participation
@@ -87,10 +86,10 @@ Miauw!
             </div>
 
             <!-- Sidebar -->
-            <div class="col-12 col-xl-3 col-md-3">
-                <h4>ILS</h4>
+            <div class="uu-sidebar">
+                <h4>Institute for Language Sciences</h4>
                 <p>
-                    The ILS is the home of linguistic and communications research at Utrecht University.
+                    The Institute for Language Sciences (ILS) is the home of linguistic and communications research at Utrecht University.
                 </p>
                 <p>
                     This website is maintained by the ILS Labs for pyscholinguistic and language acquisition
@@ -101,7 +100,7 @@ Miauw!
                     <tr>
                         <td class="align-top">ILS:</td>
                         <td>
-                            <a href="https://www.uu.nl/en/research/utrecht-institute-of-linguistics-ots">
+                            <a href="https://www.uu.nl/en/research/institute-for-language-sciences">
                                 Website
                             </a><br/>
                         </td>
@@ -110,7 +109,7 @@ Miauw!
                     <tr>
                         <td class="align-top">ILS Labs:</td>
                         <td>
-                            <a href="https://uilots-labs.wp.hum.uu.nl/">
+                            <a href="https://ils-labs.wp.hum.uu.nl/">
                                 Website
                             </a><br/>
                             labman.gw@<span class="email">null</span>uu.nl
@@ -127,10 +126,10 @@ Miauw!
             </div>
 
         </div>
-    </div>
+    </main>
 
-    <footer class="container-fluid uu-container">
-        <div class="uu-inner-container">
+    <footer class="uu-footer">
+        <div class="uu-container">
             <div class="col-10">
                 <img src="https://web-experiments.lab.hum.uu.nl/index_files/images/logo-footer-en.svg" alt="Utrecht University" title="Utrecht University" />
             </div>
